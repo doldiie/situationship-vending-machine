@@ -1,2 +1,2 @@
-# situationship-vending-machine
+index.html
 A fun relationship vending machine
