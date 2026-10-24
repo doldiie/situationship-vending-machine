@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4e5d5">
+<meta name="description" content="SITUATIONSHIP VENDING MACHINE — ตู้กดความสัมพันธ์ หยอดหนึ่งที รับกรรมหนึ่งเรื่อง">
+<meta property="og:title" content="SITUATIONSHIP VENDING MACHINE">
+<meta property="og:description" content="ความรักเลือกไม่ได้ แต่ความซวยเลือกสุ่มได้">
+<title>SITUATIONSHIP VENDING MACHINE — ตู้กดความสัมพันธ์</title>
+<style>
+:root{--paper:#f4e5d5;--cream:#fffaf4;--red:#a53d36;--ink:#29221f;--muted:#725f53;--line:#d7bba5;--green:#b6c8af;--yellow:#e7cb82;--pink:#e9b8a9}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}button{font:inherit;cursor:pointer}.wrap{width:min(960px,100%);margin:auto;padding:22px 16px 48px}.top{text-align:center;margin:12px auto 22px}.eyebrow{font-size:.75rem;letter-spacing:.18em;color:var(--red);font-weight:900}.top h1{font-size:clamp(2rem,7vw,4.2rem);line-height:1.02;letter-spacing:-.05em;margin:10px 0}.top p{color:var(--muted);margin:8px auto;max-width:520px}.machine{max-width:680px;margin:auto;background:#dfbda6;border:3px solid var(--ink);border-radius:28px;padding:14px;box-shadow:8px 9px 0 var(--ink)}.machine-head{background:var(--red);color:#fff8ef;border:2px solid var(--ink);border-radius:18px;padding:17px;text-align:center}.machine-head strong{display:block;font-size:1.1rem;letter-spacing:.08em}.machine-head span{font-size:.85rem}.windows{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.capsule{min-height:100px;border:2px solid var(--ink);border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8px;font-weight:800;font-size:.84rem}.capsule b{font-size:1.8rem;line-height:1.2}.c1{background:var(--pink)}.c2{background:var(--yellow)}.c3{background:var(--green)}.c4{background:#c3c9e8}.screen{background:var(--cream);border:2px solid var(--ink);border-radius:18px;padding:18px;margin:14px 0;text-align:center;min-height:180px;display:flex;flex-direction:column;justify-content:center;align-items:center}.screen .tag{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--red);font-weight:900}.screen h2{font-size:clamp(1.25rem,4vw,2rem);line-height:1.25;margin:10px 0}.screen p{white-space:pre-line;color:var(--muted);line-height:1.65;margin:5px 0}.warning{font-size:.78rem!important;border-top:1px dashed var(--line);padding-top:10px;margin-top:12px!important}.btn{border:2px solid var(--ink);border-radius:999px;padding:13px 18px;font-weight:900;transition:transform .12s,box-shadow .12s}.btn:active{transform:translate(2px,2px);box-shadow:none!important}.primary{width:100%;background:var(--red);color:white;box-shadow:0 4px 0 var(--ink)}.secondary{background:var(--cream);color:var(--ink)}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.actions .btn{width:100%}.tiny{text-align:center;font-size:.76rem;color:var(--muted);margin:12px 0 0}.categories{max-width:680px;margin:24px auto 0}.categories h3{text-align:center}.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.chip{border:1px solid var(--line);background:#fff8ef;color:var(--ink);border-radius:999px;padding:9px 13px;font-size:.85rem}.chip.active{background:var(--ink);color:#fff8ef;border-color:var(--ink)}.footer{max-width:680px;margin:28px auto 0;border-top:1px solid var(--line);padding-top:18px;text-align:center;color:var(--muted);font-size:.85rem}.footer a{color:var(--red);font-weight:800}.hidden{display:none!important}.toast{min-height:1.3em;text-align:center;font-size:.82rem;color:var(--red);font-weight:700;margin:8px 0 0}@media(max-width:480px){.wrap{padding:14px 12px 34px}.machine{padding:10px;border-radius:22px;box-shadow:5px 6px 0 var(--ink)}.windows{gap:6px}.capsule{font-size:.72rem;min-height:88px;padding:5px}.capsule b{font-size:1.5rem}.screen{padding:15px;min-height:200px}.actions{grid-template-columns:1fr}.top{margin-top:8px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="top"><div class="eyebrow">SITUATIONSHIP™ PRESENTS</div><h1>ตู้กดความสัมพันธ์</h1><p>หยอดหนึ่งที รับกรรมหนึ่งเรื่อง<br><strong>ความรักเลือกไม่ได้ แต่ความซวยเลือกสุ่มได้</strong></p></header>
+  <section class="machine" aria-label="ตู้กดความสัมพันธ์">
+    <div class="machine-head"><strong>SITUATIONSHIP VENDING MACHINE</strong><span>NO REFUND · NO GUARANTEE · ALL FEELINGS INCLUDED</span></div>
+    <div class="windows" aria-label="หมวดสินค้า">
+      <div class="capsule c1"><b>♡</b>รักเขาข้างเดียว</div><div class="capsule c2"><b>♨</b>หวงเกินสิทธิ์</div><div class="capsule c3"><b>?</b>สถานะไม่ชัด</div>
+    </div>
+    <section class="screen" aria-live="polite" aria-atomic="true">
+      <div class="tag" id="resultCategory">พร้อมจำหน่าย</div>
+      <h2 id="resultTitle">พร้อมรับกรรมหรือยัง?</h2>
+      <p id="resultDesc">กดปุ่มด้านล่างเพื่อสุ่มสถานการณ์ความสัมพันธ์หนึ่งเรื่อง
+รับประกันความปั่น แต่ไม่รับประกันความสมหวัง</p>
+      <p class="warning" id="resultWarning">⚠ สินค้าทุกชิ้นเป็นเรื่องสมมติเพื่อความบันเทิง</p>
+    </section>
+    <button class="btn primary" id="drawBtn">🎁 กดสุ่มรับกรรม!</button>
+    <div class="actions" style="margin-top:10px"><button class="btn secondary" id="copyBtn" disabled>คัดลอกผลลัพธ์</button><button class="btn secondary" id="shareBtn" disabled>แชร์ให้เพื่อน</button></div>
+    <div class="toast" id="toast" role="status"></div>
+    <p class="tiny">สุ่มได้เรื่อย ๆ แต่ความรู้สึกไม่จำเป็นต้องเสี่ยงตาม</p>
+  </section>
+  <section class="categories"><h3>เลือกหมวดกรรม หรือปล่อยให้โชคชะตาจัดการ</h3><div class="chips" id="chips"><button class="chip active" data-cat="all">สุ่มทุกหมวด</button><button class="chip" data-cat="รักเขาข้างเดียว">รักเขาข้างเดียว</button><button class="chip" data-cat="หวงเกินสิทธิ์">หวงเกินสิทธิ์</button><button class="chip" data-cat="สถานะไม่ชัด">สถานะไม่ชัด</button><button class="chip" data-cat="ชำรุดทางความรู้สึก">ชำรุดทางความรู้สึก</button><button class="chip" data-cat="จ๋ายกับปิ๊ก">แฟ้มลับจ๋ายกับปิ๊ก</button></div></section>
+  <footer class="footer"><p><strong>กรมความสัมพันธ์ที่ไม่รู้จะเรียกว่าอะไร</strong></p><p>เว็บไซต์แฟนแคมเปญตัวอย่างสำหรับความบันเทิง ไม่ใช่ช่องทางทางการของซีรีส์</p><p><a href="#" id="seriesLink">ไปดูซีรีส์ / ช่องทางทางการ</a></p><p>© SITUATIONSHIP VENDING MACHINE</p></footer>
+</main>
+<script>
+const products = [
+{cat:'รักเขาข้างเดียว',id:'001',title:'เขาจำทุกเรื่องของคุณได้ ยกเว้นเรื่องที่คุณชอบเขา',desc:'สถานะ: เพื่อนคนสำคัญ\nของแถม: ความหวังที่ไม่ได้สั่ง\nคำเตือน: โปรดอย่าแปลความใส่ใจทุกอย่างเป็นความรัก'},
+{cat:'รักเขาข้างเดียว',id:'002',title:'คุณเป็นคนแรกที่เขานึกถึง แต่ไม่ใช่คนที่เขาเลือก',desc:'สถานะ: คนสำคัญ\nของแถม: คำถามที่ไม่มีใครตอบ\nคำเตือน: ความสำคัญกับความรักไม่จำเป็นต้องเป็นเรื่องเดียวกัน'},
+{cat:'รักเขาข้างเดียว',id:'003',title:'เขามาปรึกษาเรื่องคนที่ชอบ แล้วคุณก็ช่วยเต็มที่',desc:'สถานะ: ที่ปรึกษาหัวใจ\nของแถม: เจ็บเองนักเลงพอ\nคำเตือน: โปรดประเมินความพร้อมของหัวใจก่อนรับงาน'},
+{cat:'รักเขาข้างเดียว',id:'004',title:'คุณไม่ได้รอเขา แค่เปิดแชตทิ้งไว้ทั้งวัน',desc:'สถานะ: ไม่ได้รอจริง ๆ\nของแถม: หน้าจอสว่างทุกสามนาที\nคำเตือน: การออนไลน์ไม่ได้แปลว่าเขาจะทัก'},
+{cat:'รักเขาข้างเดียว',id:'005',title:'เขาบอกว่าคุณคือคนที่เข้าใจเขาที่สุด',desc:'สถานะ: ผู้รับฟังระดับพรีเมียม\nของแถม: ปัญหาความรักของเขาอีกหนึ่งเรื่อง\nคำเตือน: การเป็นที่พักใจไม่เท่ากับการเป็นคนรัก'},
+{cat:'รักเขาข้างเดียว',id:'006',title:'เขาส่งเพลงมาให้ แล้วคุณตั้งชื่อ playlist ร่วมกันในใจ',desc:'สถานะ: ผู้กำกับมิวสิกวิดีโอในจินตนาการ\nของแถม: เพลงวน 47 รอบ\nคำเตือน: โปรดตรวจสอบก่อนว่าเพลงนั้นส่งให้ทุกคนหรือไม่'},
+{cat:'รักเขาข้างเดียว',id:'007',title:'คุณจำวันสำคัญของเขาได้ เขาจำได้ว่าคุณชอบกินอะไร',desc:'สถานะ: ความทรงจำคนละระดับ\nของแถม: การตีความเกินข้อมูล\nคำเตือน: ความใส่ใจเป็นเรื่องดี แต่อย่าเพิ่งสรุปแทนอีกฝ่าย'},
+{cat:'รักเขาข้างเดียว',id:'008',title:'คุณบอกว่าไม่เป็นไรได้คล่องกว่าบอกว่าชอบ',desc:'สถานะ: นักแสดงนำยอดเยี่ยม\nของแถม: ความรู้สึกเก็บสะสม\nคำเตือน: การพูดความจริงกับตัวเองก็สำคัญ'},
+{cat:'หวงเกินสิทธิ์',id:'011',title:'ไม่ได้เป็นแฟน แต่ทำไมต้องรายงานตัว?',desc:'สถานะ: ยังไม่ระบุ\nของแถม: คำถามว่าอยู่ไหน\nคำเตือน: ผู้จำหน่ายไม่มีเอกสารรับรองสิทธิ์ในการหวง'},
+{cat:'หวงเกินสิทธิ์',id:'012',title:'เขามีคนคุยได้ แต่พอคุณมีบ้างกลับถามว่าใคร',desc:'สถานะ: กติกาสองมาตรฐาน\nของแถม: การสอบสวนไม่จำกัดข้อ\nคำเตือน: ความสัมพันธ์ควรมีขอบเขตที่ทั้งสองฝ่ายยอมรับ'},
+{cat:'หวงเกินสิทธิ์',id:'013',title:'ปากบอกไม่ได้หึง แต่ถามชื่อ นามสกุล และประวัติการศึกษา',desc:'สถานะ: ผู้ต้องสงสัย\nของแถม: แบบสอบถาม 17 หน้า\nคำเตือน: คำว่าแค่ถามเฉย ๆ ไม่ได้ทำให้คำถามน้อยลง'},
+{cat:'หวงเกินสิทธิ์',id:'014',title:'คุณลงรูปกับคนอื่น เขาดูสตอรีครบทุกอัน',desc:'สถานะ: ผู้ชมประจำ\nของแถม: การคาดเดาแบบไม่มีหลักฐาน\nคำเตือน: การดูสตอรีไม่ใช่เอกสารยืนยันความหึง'},
+{cat:'หวงเกินสิทธิ์',id:'015',title:'เขาบอกให้คุณไปมีแฟน แต่พอมีจริงกลับเงียบ',desc:'สถานะ: ปากอย่างใจอย่างหรือไม่ โปรดตรวจสอบ\nของแถม: ความเงียบปริมาณมาก\nคำเตือน: อย่าสรุปความรู้สึกจากพฤติกรรมเดียว'},
+{cat:'หวงเกินสิทธิ์',id:'016',title:'คุณไม่ได้หึง แค่ไม่ชอบคนที่เขาคุยด้วยทุกคน',desc:'สถานะ: คณะกรรมการคัดเลือกแฟนแทน\nของแถม: เหตุผล 38 ข้อ\nคำเตือน: โปรดพิจารณาว่าคุณมีสิทธิ์ตัดสินใจแทนเขาหรือไม่'},
+{cat:'หวงเกินสิทธิ์',id:'017',title:'เขาถามว่าไปกับใคร ทั้งที่ตัวเองก็ไปกับคนอื่น',desc:'สถานะ: ระบบตรวจสอบมีข้อผิดพลาด\nของแถม: เครื่องหมายคำถาม\nคำเตือน: กติกาควรใช้กับทุกฝ่ายอย่างเป็นธรรม'},
+{cat:'หวงเกินสิทธิ์',id:'018',title:'คุณบอกว่าไม่ได้หวง แค่ไม่อยากให้เขาไปกับคนนั้น',desc:'สถานะ: อยู่ระหว่างพิจารณา\nของแถม: เหตุผลที่อธิบายยาก\nคำเตือน: ลองถามตัวเองว่าคุณต้องการอะไรจากความสัมพันธ์นี้'},
+{cat:'สถานะไม่ชัด',id:'021',title:'คุยกันทุกวัน แต่ถ้ามีคนถามว่าเป็นอะไรกันกลับเงียบพร้อมกัน',desc:'สถานะ: กำลังโหลดคำตอบ\nของแถม: จุดสามจุดที่ไม่สิ้นสุด\nคำเตือน: ระบบไม่สามารถระบุสถานะจากความถี่ในการแชต'},
+{cat:'สถานะไม่ชัด',id:'022',title:'เขาบอกว่าอย่าเพิ่งคิดไปไกล แต่ทำเหมือนจองตั๋วไปอนาคตแล้ว',desc:'สถานะ: อยู่ระหว่างตีความ\nของแถม: แผนอนาคตในจินตนาการ\nคำเตือน: โปรดแยกความหวังออกจากข้อตกลงที่เกิดขึ้นจริง'},
+{cat:'สถานะไม่ชัด',id:'023',title:'ความสัมพันธ์นี้มีทุกอย่าง ยกเว้นคำตอบ',desc:'สถานะ: ไม่พบข้อมูล\nของแถม: ความสับสนไม่จำกัดจำนวน\nคำเตือน: โปรดติดต่อผู้เกี่ยวข้องโดยตรง'},
+{cat:'สถานะไม่ชัด',id:'024',title:'เขาเรียกคุณว่าคนพิเศษ แต่พิเศษตรงไหนไม่แจ้ง',desc:'สถานะ: สิทธิพิเศษไม่ระบุรายการ\nของแถม: การตีความตามความสมัครใจ\nคำเตือน: ขอรายละเอียดสิทธิ์ก่อนใช้บริการ'},
+{cat:'สถานะไม่ชัด',id:'025',title:'ตอนอยู่ด้วยกันเหมือนแฟน พอแยกกันเหมือนไม่รู้จัก',desc:'สถานะ: สัญญาณขาดหาย\nของแถม: ความคิดถึงแบบงง ๆ\nคำเตือน: ความสม่ำเสมอสำคัญกว่าช่วงเวลาที่หวานเป็นพิเศษ'},
+{cat:'สถานะไม่ชัด',id:'026',title:'เขาบอกว่าไม่พร้อมมีใคร แต่ก็ไม่อยากให้คุณไปไหน',desc:'สถานะ: โปรดรอการชี้แจง\nของแถม: การรอที่ไม่มีวันกำหนด\nคำเตือน: คุณมีสิทธิ์ตัดสินใจว่าการรอเหมาะกับตัวเองหรือไม่'},
+{cat:'สถานะไม่ชัด',id:'027',title:'เขาส่งคำว่า “คิดถึง” แต่ไม่เคยพูดว่าเราเป็นอะไรกัน',desc:'สถานะ: ข้อความได้รับแล้ว\nของแถม: คำถามค้างใจ\nคำเตือน: คำหวานไม่ใช่ข้อตกลงความสัมพันธ์'},
+{cat:'สถานะไม่ชัด',id:'028',title:'คุณทั้งคู่ไม่ได้คบกัน แต่เพื่อนทุกคนเหนื่อยกับการถามแล้ว',desc:'สถานะ: คนรอบข้างยื่นใบลา\nของแถม: คำว่า “แล้วแต่จะคิด”\nคำเตือน: โปรดอย่าบังคับเพื่อนให้เป็นกรรมการตลอดไป'},
+{cat:'ชำรุดทางความรู้สึก',id:'031',title:'มูฟออนแล้ว แต่เขาทักมาก็พร้อมกลับไป',desc:'สถานะ: กำลังฟื้นตัว\nของแถม: การเริ่มต้นใหม่ทุกวันจันทร์\nคำเตือน: ลองหยุดคิดก่อนตอบข้อความ'},
+{cat:'ชำรุดทางความรู้สึก',id:'032',title:'คุณตั้งใจจะไม่ทักก่อน แล้วส่งสติกเกอร์ไปตอนตีหนึ่ง',desc:'สถานะ: แผนล้มเหลวอย่างมีชั้นเชิง\nของแถม: ข้ออ้างว่าเผลอกด\nคำเตือน: โปรดตรวจสอบนิ้วมือก่อนโทษโทรศัพท์'},
+{cat:'ชำรุดทางความรู้สึก',id:'033',title:'คุณไม่ได้เช็กว่าเขาออนไลน์ไหม แค่เปิดดูสถานะทุกชั่วโมง',desc:'สถานะ: นักวิจัยข้อมูลส่วนบุคคลของหัวใจตัวเอง\nของแถม: สถิติที่ไม่ได้ช่วยอะไร\nคำเตือน: พักสายตาแล้วไปทำสิ่งที่ตัวเองชอบบ้าง'},
+{cat:'ชำรุดทางความรู้สึก',id:'034',title:'คุณบอกเพื่อนว่าเลิกชอบแล้ว แต่หันตามเสียงแจ้งเตือนทุกครั้ง',desc:'สถานะ: ปากแข็งระดับแชมป์\nของแถม: ความหวังแบบอัตโนมัติ\nคำเตือน: ไม่จำเป็นต้องรีบหายรู้สึกในทันที'},
+{cat:'ชำรุดทางความรู้สึก',id:'035',title:'คุณลบแชตแล้ว แต่จำทุกประโยคได้',desc:'สถานะ: หน่วยความจำยังทำงาน\nของแถม: บทสนทนาฉบับรีรัน\nคำเตือน: การลืมไม่ใช่สิ่งที่สั่งได้ด้วยปุ่มเดียว'},
+{cat:'ชำรุดทางความรู้สึก',id:'036',title:'คุณบอกว่าจะนอนแล้ว แต่ยังรอคำว่า “ฝันดี”',desc:'สถานะ: ยังไม่ปิดระบบ\nของแถม: ง่วงแต่ไม่ยอมหลับ\nคำเตือน: การพักผ่อนของคุณสำคัญกว่าการรอข้อความ'},
+{cat:'ชำรุดทางความรู้สึก',id:'037',title:'คุณไม่ได้คิดมาก แค่คิดแทนเขาไปแล้ว 14 สถานการณ์',desc:'สถานะ: ผู้เขียนบทในจินตนาการ\nของแถม: พล็อตที่ไม่มีใครอนุมัติ\nคำเตือน: ถ้าไม่แน่ใจ การถามตรง ๆ อาจช่วยได้มากกว่าเดา'},
+{cat:'ชำรุดทางความรู้สึก',id:'038',title:'คุณบอกว่าไม่เป็นไรจนอีกฝ่ายคิดว่าไม่เป็นไรจริง ๆ',desc:'สถานะ: สื่อสารคลาดเคลื่อน\nของแถม: ความน้อยใจสะสม\nคำเตือน: คนอื่นอาจไม่รู้ความรู้สึกที่คุณไม่ได้บอก'},
+{cat:'จ๋ายกับปิ๊ก',id:'J01',title:'สิทธิ์หวงไม่จำกัด แต่สถานะยังไม่ระบุ',desc:'สถานะ: เพื่อน\nพฤติการณ์: หวงก้างเกินเอกสารรับรอง\nหมายเหตุ: กรมขอสงวนสิทธิ์เรียกผู้เกี่ยวข้องมาชี้แจง'},
+{cat:'จ๋ายกับปิ๊ก',id:'J02',title:'ผู้ถูกร้องกล่าวว่า “เริ่มงี่เง่าละ”',desc:'สถานะสำนวน: อยู่ระหว่างพิจารณา\nหลักฐาน: ถ้อยคำที่อาจมีความหมายได้หลายประการ\nคำถาม: เข้าใจความรู้สึก หรือกำลังปัดความรู้สึกทิ้ง?'},
+{cat:'จ๋ายกับปิ๊ก',id:'J03',title:'มีคนคุยหลายคน แต่คนที่เป็นเพื่อนกลับหวงเป็นพิเศษ',desc:'สถานะ: มีข้อสงสัย\nของแถม: คำถามว่า “แล้วเราเป็นอะไรกัน?”\nหมายเหตุ: ยังไม่อาจสรุปความรู้สึกของผู้ถูกร้องจากพฤติการณ์เพียงอย่างเดียว'},
+{cat:'จ๋ายกับปิ๊ก',id:'J04',title:'คดีหวงเพื่อนเกินขอบเขต',desc:'ผู้ร้อง: ปิ๊ก\nผู้ถูกร้อง: จ๋าย\nสถานะ: รอพยานหลักฐานเพิ่มเติม\nคำสั่ง: ขอเชิญประชาชนร่วมลงความเห็น แต่ห้ามสรุปแทนเจ้าตัวก่อนมีหลักฐาน'}
+];
+let activeCat='all', current=null, lastIndex=-1;
+const $=id=>document.getElementById(id);
+function choose(){let pool=products.filter(p=>activeCat==='all'||p.cat===activeCat);if(!pool.length)return null;let index;do{index=Math.floor(Math.random()*pool.length)}while(pool.length>1&&pool[index]===current);return pool[index]}
+function draw(){current=choose();if(!current)return;$('resultCategory').textContent=`${current.cat} · สินค้าหมายเลข ${current.id}`;$('resultTitle').textContent=current.title;$('resultDesc').textContent=current.desc;$('resultWarning').textContent='⚠ สินค้าสมมติเพื่อความบันเทิง · ไม่ใช่คำวินิจฉัยความสัมพันธ์';$('copyBtn').disabled=false;$('shareBtn').disabled=false;$('toast').textContent='';}
+function shareText(){return `🎁 SITUATIONSHIP VENDING MACHINE\n${current.cat}\n${current.title}\n${current.desc}\n\nความรักเลือกไม่ได้ แต่ความซวยเลือกสุ่มได้\n${location.href}`}
+$('drawBtn').addEventListener('click',draw);
+$('copyBtn').addEventListener('click',async()=>{if(!current)return;try{await navigator.clipboard.writeText(shareText());$('toast').textContent='คัดลอกผลลัพธ์แล้ว ส่งให้เพื่อนได้เลย!'}catch(e){const ta=document.createElement('textarea');ta.value=shareText();document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();$('toast').textContent='คัดลอกผลลัพธ์แล้ว ส่งให้เพื่อนได้เลย!'}});
+$('shareBtn').addEventListener('click',async()=>{if(!current)return;const data={title:'SITUATIONSHIP VENDING MACHINE',text:shareText(),url:location.href};if(navigator.share){try{await navigator.share(data);$('toast').textContent='ขอบคุณที่ช่วยส่งต่อกรรม!'}catch(e){if(e.name!=='AbortError')$('toast').textContent='แชร์ไม่สำเร็จ ลองคัดลอกผลลัพธ์แทนได้'}}else{try{await navigator.clipboard.writeText(shareText());$('toast').textContent='อุปกรณ์นี้ไม่รองรับเมนูแชร์ จึงคัดลอกข้อความให้แทนแล้ว'}catch(e){$('toast').textContent='กดคัดลอกผลลัพธ์เพื่อแชร์ได้เลย'}}});
+document.querySelectorAll('.chip').forEach(btn=>btn.addEventListener('click',()=>{activeCat=btn.dataset.cat;document.querySelectorAll('.chip').forEach(b=>b.classList.toggle('active',b===btn));$('toast').textContent=activeCat==='all'?'เลือกสุ่มทุกหมวดแล้ว':`เลือกหมวด “${activeCat}” แล้ว กดสุ่มรับกรรมได้เลย`; }));
+// Replace this placeholder with the series' official URL before publishing.
+$('seriesLink').addEventListener('click',e=>{e.preventDefault();$('toast').textContent='ก่อนเผยแพร่ ให้แก้ลิงก์นี้เป็นช่องทางทางการของซีรีส์';});
+</script>
+</body></html>
